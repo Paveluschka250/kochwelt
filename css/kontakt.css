@@ -1,0 +1,50 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.section-contact {
+   display: flex;
+   justify-content: center;
+   flex: 1;
+   padding: 80px 48px 120px 48px;
+}
+
+.section-contact-content {
+    max-width: 640px;
+}
+
+.section-sent-content {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    font: inherit;
+    margin: 0 0 8px 0;
+    padding: 8px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.contact-form > span {
+    margin: 12px 0 0 0;
+}
+
+
+@media (max-width: 840px) {
+
+    .section-contact {
+        padding: 60px 24px 80px 24px;
+     }
+  }

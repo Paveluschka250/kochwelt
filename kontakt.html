@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/kontakt.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <script src="./js/main.js"></script>
+    <script src="./js/kontaktformular.js"></script>
+    <script src="./js/header.js"></script>
+    <title>Kochwelt - Kontakt</title>
+</head>
+
+<body onload="includeHTML()">
+    <header w3-include-html="header.html">
+    
+    </header>
+
+    <section class="section-contact">
+        <div class="section-contact-content">
+            <h1>Kontaktformular</h1>
+            <p>
+                Du hast ein Rezept für uns? Anregungen, Wünsche? Wir freuen uns von dir zu hören!
+            </p>
+            <form class="contact-form" onsubmit="sendMail(event)">
+                <input type="text" required placeholder="Name*">
+                <input type="email" required placeholder="Email*">
+                <textarea required placeholder="Deine Nachricht...*"></textarea>
+                <button type="submit" class="btn">Absenden</button>
+                <span>Mit* markierte Felder sind Pflichtfelder</span>
+            </form>
+        </div>
+    </section>
+
+    <footer w3-include-html="footer.html">
+     
+    </footer>
+</body>
+
+</html>

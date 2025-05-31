@@ -1,0 +1,16 @@
+.section-imprint {
+    padding: 120px 48px 120px 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.imprint-content {
+    max-width: 1920px;
+}
+
+@media (max-width: 840px) {
+
+    .section-imprint {
+        padding: 80px 24px 80px 24px;
+    }
+}

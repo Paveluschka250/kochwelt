@@ -1,0 +1,121 @@
+
+.recipe {
+    padding: 120px 48px 120px 48px;
+    max-width: 1920px;
+}
+
+.pasta_img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.main_sub {
+    display: flex;
+    gap: 8px;
+    margin: 24px 0 48px 0;
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-inline: 8px;
+    border-radius: 15px;
+    background-color: rgb(236, 235, 235); 
+}
+
+.sub_img {
+    padding-right: 8px;
+    height: 16px;
+    width: 16px;
+    background-color: rgb(236, 235, 235);
+}
+
+p {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #008000;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    padding: 12px 48px;
+    cursor: pointer;
+}
+
+input {
+    height: 40px;
+    width: 170px;
+    margin-left: 12px;
+    font-family: "Raleway";
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    text-align: center;
+    padding: 8px;
+}
+
+
+tr:nth-child(odd) {
+    background-color: rgb(236, 235, 235);
+}
+
+td:first-child {
+  border-radius: 10px 0 0 10px;
+}
+td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.recepi_header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.autor-info {
+    margin: 24px 0 0 0;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.autor-img {
+    border-radius: 50%;
+    width: 90px;
+}
+
+.autor-name {
+    font-size: 20px;
+}
+
+@media (max-width: 840px) {
+    body, button {
+        font-size: 14px;
+    }
+
+    .pasta_img {
+        height: 180px;
+    }
+}
+
+@media (max-width:600px) {
+    .main_sub {
+        flex-direction: column;
+    }
+
+    button {
+        padding: 12px 12px;
+    }
+}

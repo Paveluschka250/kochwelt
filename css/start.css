@@ -1,0 +1,117 @@
+.section-herorezept, .section-newrecipies, .section-blog {
+    padding: 120px 48px 120px 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-newrecipies{
+    background-color: #efefef ;
+}
+
+.herorezept-content {
+    max-width: 1920px;
+    display: flex;
+    gap: 24px;
+}
+
+.herorezept-image {
+    border-radius: 16px;
+    flex: 1;
+}
+
+.herorezept-image >  img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+}
+
+.herorezept-text {
+    flex: 2;
+}
+
+.herorezept-text > button {
+    margin: 48px 0 0 0;
+}
+
+.newrecipies-content{
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: stretch;
+}
+
+.newrecipies-content >h2 {
+    text-align: center;
+}
+
+.newrecipies-images {
+    margin: 24px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.newrecipie-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.recipie-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.newrecipie-box > h3 {
+    margin: 16px 0 0 0;
+}
+
+.blog-content {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-content >h2 {
+    text-align: center;
+}
+
+.blogpost-content {
+    display: flex;
+    gap: 24px;
+    margin: 24px 0 0 0;
+}
+
+.blogpost-text {
+    flex: 2
+}
+
+.blogpost-image {
+    flex: 1
+}
+
+.blogpost-image > img {
+    border-radius: 16px;
+    width: 100%;
+}
+
+@media (max-width: 840px) {
+
+    .section-herorezept, .section-newrecipies, .section-blog {
+        padding: 80px 24px 80px 24px;
+    }
+
+    .herorezept-content {
+        flex-direction: column;
+    }
+
+    .newrecipies-images {
+        flex-direction: column;
+    }
+
+    .blogpost-content {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+}

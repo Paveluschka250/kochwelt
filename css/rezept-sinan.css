@@ -1,0 +1,145 @@
+.recipie {
+  padding: 120px 48px 120px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.recipie-content {
+    max-width: 1920px;
+}
+
+.recipie-img {
+  background: url("../img/Tortellini-1-1.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  margin: 24px 0 0 0;
+}
+
+.info-iconbar {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0 48px 0;
+}
+
+.info-icon {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-icon > img {
+  height: 16px;
+  width: auto;
+}
+
+hr {
+ border: 1px solid #efefef; 
+}
+
+
+.recipie-form {
+  display: flex;
+  align-items: center;
+  margin: 24px 0 0 0;
+}
+
+.recipie-form > label {
+  margin: 0 16px 0 0;
+}
+
+.recipie-form > input {
+  padding-block: 0;
+  padding-inline: 0;
+  padding: 0 16px 0 16px;
+  font-size: 16px;
+  height: 40px;
+  width: 148px;
+
+}
+
+.warning {
+  font-size: 14px;
+  color: rgb(230, 136, 14);
+}
+
+.input-warning {
+  border: 2px solid rgb(230, 136, 14);
+}
+
+.dont-show {
+  visibility: hidden;
+}
+
+.recipie-table
+{
+  margin: 12px 0 24px 0;
+ width: 100%;
+ border-spacing: 0;
+
+}
+
+tr {
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #efefef;
+    border-radius: 8px;
+}
+
+ol {
+  padding-inline-start: 16px;
+  margin: 0 0 24px 0;
+}
+
+li {
+  margin: 0 0 16px 0;
+}
+
+.autor-info {
+  margin: 24px 0 0 0;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.autor-img {
+  border-radius: 50%;
+  width: 90px;
+}
+
+.autor-name {
+  font-size: 20px;
+} 
+
+@media (max-width: 840px) {
+  .recipie {
+    padding: 80px 24px 80px 24px;
+  } 
+
+  .recipie-img {
+  height: 180px;
+  }
+
+.recipie-form > .btn {
+    padding: 12px 30px;
+  }
+
+  .info-iconbar {
+    gap: 8px;
+  }
+
+  .recipie-form > input {
+    height: 36px;
+    width: 48px;
+  
+  }
+  
+ }
