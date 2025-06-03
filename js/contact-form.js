@@ -9,7 +9,7 @@ function sendMail(event){﻿
             'Accept': 'application/json'
         }
     }).then(() => {
-        window.location.href = "./kontakt_gesendet.html";
+        window.location.href = "../contact-submitted.html";
     }).catch((error) => {
         console.log(error);
     });
