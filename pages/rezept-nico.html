@@ -3,61 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/rezept-nico.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
-    <script src="./js/rezept-nico.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/header.js"></script>
+    <link rel="icon" href="../assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/rezept-jens.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
     <title>Kochwelt - Spaghetti aglio e olio</title>
   </head>
 
   <body onload="includeHTML()">
-    <header w3-include-html="header.html"></header>
+    <header w3-include-html="../partials/header.html"></header>
+
     <section class="recipie">
       <div class="recipie-content">
         <h1>Spaghetti aglio e olio</h1>
-        <div class="recipie-img" id="recipie-img" src="" alt=""></div>
+        <div class="recipie-img recipie-img-aglioeolio"></div>
         <div class="info-iconbar">
           <div class="info-icon">
-            <img src="img/clock-regular.svg" alt="" />20 Min.
+            <img src="../assets/img/icons/clock-regular.svg" alt="Gesamtzeit" />20 Min.
           </div>
           <div class="info-icon">
-            <img src="img/brain-solid.svg" alt="" />simpel
+            <img src="../assets/img/icons/brain-solid.svg" alt="Schwierigkeit" />simpel
           </div>
           <div class="info-icon">
-            <img src="img/calendar-alt-regular.svg" alt="" />17.06.2024
+            <img
+              src="../assets/img/icons/calendar-alt-regular.svg"
+              alt="Datum"
+            />17.06.2024
           </div>
         </div>
         <hr />
         <div class="recipie-form">
           <label for="input-amount">Zutaten für</label>
-          <input
-            id="input-amount"
-            type="number"
-            required
-            min="1"
-            max="20"
-            value="4"
-          />
+          <input id="input-amount" type="number" required min="1" max="20" />
           <button class="btn" id="btn-amount">Portionen</button>
         </div>
         <span id="input-warning-msg" class="warning fadeout dont-show"
@@ -69,29 +48,51 @@
         <h2>Zubereitung</h2>
         <div class="info-iconbar">
           <div class="info-icon">
-            <img src="img/clock-regular.svg" alt="" />ca. 15 Min.
+            <img src="../assets/img/icons/clock-regular.svg" alt="Zubereitung" />ca. 15
+            Min.
           </div>
           <div class="info-icon">
-            <img src="img/clock-regular.svg" alt="" />Gesamtzeit ca. 20 Min.
+            <img src="../assets/img/icons/clock-regular.svg" alt="Gesamtzeit" />Gesamtzeit
+            ca. 20 Min.
           </div>
         </div>
         <ol>
-          Die Spaghetti in einem großen Topf in reichlich Salzwasser al dente
-          (ca. 8 Minuten) kochen. Die Knoblauchzehen schälen, durch die
-          Knoblauchpresse drücken oder fein hacken. Die Petersilie waschen,
-          trockenschwenken und die Blätter fein hacken. In einer Pfanne das
-          Olivenöl mit Knoblauch, Petersilie und Pfefferoni bei schwacher Hitze
-          erwärmen, etwa 3 Minuten ziehen lassen. Nach Belieben salzen. Die
-          Nudeln durch ein Sieb abgießen, gut abtropfen lassen und in die Pfanne
-          zum Knoblauchöl hinzugeben und gut durchmischen.
+          <li>
+            Zuerst die Spaghetti in reichlich gesalzenem Wasser nach
+            Packungsanleitung al dente kochen. Währenddessen den Knoblauch
+            schälen und in feine Scheiben schneiden. Die Chilischote (oder
+            getrocknete Chiliflocken) ebenfalls fein hacken oder bereitlegen.
+          </li>
+          <li>
+            In einer großen Pfanne das Olivenöl bei mittlerer Hitze erwärmen.
+            Den Knoblauch darin vorsichtig anbraten, bis er leicht goldbraun ist
+            – nicht zu dunkel, sonst wird er bitter. Dann die Chili zugeben und
+            kurz mitrösten.
+          </li>
+          <li>
+            Die fertigen Spaghetti abgießen und dabei etwa eine halbe Tasse
+            Nudelwasser auffangen. Die Spaghetti direkt in die Pfanne zum
+            Knoblauch-Chili-Öl geben. Etwas Nudelwasser hinzufügen und alles gut
+            durchschwenken, bis sich das Öl gut verteilt hat und leicht
+            emulgiert.
+          </li>
+          <li>
+            Nach Belieben mit gehackter Petersilie bestreuen und sofort
+            servieren – optional mit etwas frisch geriebenem Parmesan.
+          </li>
         </ol>
+
         <h3>Rezept erstellt von</h3>
         <div class="autor-info">
-          <img class="autor-img" src="img/santa.jpg" alt="" />
+          <img class="autor-img" src="../assets/img/profil/nicolaus.jpg" alt="Profil" />
           <span class="autor-name">Nicolaus F.</span>
         </div>
       </div>
     </section>
-    <footer w3-include-html="footer.html"></footer>
+    <footer w3-include-html="../partials/footer.html"></footer>
   </body>
+
+  <script src="../js/rezept-nico.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/header.js"></script>
 </html>

@@ -9,11 +9,26 @@
 }
 
 .recipie-img {
-  background: url("../assets/img/food/lasagne-header.jpg") no-repeat center/cover;
   width: 100%;
   height: 300px;
   border-radius: 16px;
   margin: 24px 0 0 0;
+}
+
+.recipie-img-lagnase {
+  background: url("../assets/img/food/lasagne-header.jpg") no-repeat center/cover;
+}
+
+.recipie-img-torellini {
+  background: url("../assets/img/food/tortellini_min.jpg") no-repeat center/cover;
+}
+
+.recipie-img-aglioeolio {
+  background: url("../assets/img/food/pasta_aglio_min.jpg") no-repeat center/cover;
+}
+
+.recipie-img-carbonara {
+  background: url("../assets/img/food/spaghetti_carbonara_min.jpg") no-repeat center/cover;
 }
 
 .info-iconbar {
