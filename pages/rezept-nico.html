@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/rezept-nico.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/rezept-nico.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
     <script src="./js/rezept-nico.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/header.js"></script>
     <title>Kochwelt - Spaghetti aglio e olio</title>
-</head>
+  </head>
 
-<body onload="includeHTML()">
-    <header w3-include-html="header.html">
-
-    </header>
+  <body onload="includeHTML()">
+    <header w3-include-html="header.html"></header>
     <section class="recipie">
-        <div class="recipie-content">
-            <h1 >Spaghetti aglio e olio</h1>
-            <div class="recipie-img" id="recipie-img" src="" alt="">
-            </div>
-            <div class="info-iconbar">
-                <div class="info-icon"><img src="img/clock-regular.svg" alt="">20 Min.</div>
-                <div class="info-icon"><img src="img/brain-solid.svg" alt="">simpel</div>
-                <div class="info-icon"><img src="img/calendar-alt-regular.svg" alt="">17.06.2024</div>
-            </div>
-            <hr>
-            <div class="recipie-form">
-                <label for="input-amount">Zutaten für</label>
-                <input id="input-amount" type="number" required min="1" max="20" value="4">
-                <button class="btn" id="btn-amount">Portionen</button>
-            </div>
-            <span id="input-warning-msg" class="warning fadeout dont-show">Der Wert muss zwischen 1 und 20 liegen</span>
-            <table  class="recipie-table">
-                <tbody id="recipie-table">
-
-                </tbody>
-            </table>
-            <h2>Zubereitung</h2>
-            <div class="info-iconbar">
-                <div class="info-icon"><img src="img/clock-regular.svg" alt="">ca. 15 Min.</div>
-                <div class="info-icon"><img src="img/clock-regular.svg" alt="">Gesamtzeit ca. 20 Min.</div>
-            </div>
-            <ol>
-                Die Spaghetti in einem großen Topf in reichlich Salzwasser al dente (ca. 8 Minuten) kochen.
-                    Die Knoblauchzehen schälen, durch die Knoblauchpresse drücken oder fein hacken. Die Petersilie waschen, trockenschwenken und die Blätter fein hacken.
-                    In einer Pfanne das Olivenöl mit Knoblauch, Petersilie und Pfefferoni bei schwacher Hitze erwärmen, etwa 3 Minuten ziehen lassen. Nach Belieben salzen.
-                    Die Nudeln durch ein Sieb abgießen, gut abtropfen lassen und in die Pfanne zum Knoblauchöl hinzugeben und gut durchmischen.
-
-            </ol>
-            <h3>Rezept erstellt von</h3>
-            <div class="autor-info">
-                <img class="autor-img" src="img/santa.jpg" alt="">
-                <span class="autor-name">Nicolaus F.</span>
-            </div>
-
+      <div class="recipie-content">
+        <h1>Spaghetti aglio e olio</h1>
+        <div class="recipie-img" id="recipie-img" src="" alt=""></div>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img src="img/clock-regular.svg" alt="" />20 Min.
+          </div>
+          <div class="info-icon">
+            <img src="img/brain-solid.svg" alt="" />simpel
+          </div>
+          <div class="info-icon">
+            <img src="img/calendar-alt-regular.svg" alt="" />17.06.2024
+          </div>
         </div>
+        <hr />
+        <div class="recipie-form">
+          <label for="input-amount">Zutaten für</label>
+          <input
+            id="input-amount"
+            type="number"
+            required
+            min="1"
+            max="20"
+            value="4"
+          />
+          <button class="btn" id="btn-amount">Portionen</button>
+        </div>
+        <span id="input-warning-msg" class="warning fadeout dont-show"
+          >Der Wert muss zwischen 1 und 20 liegen</span
+        >
+        <table class="recipie-table">
+          <tbody id="recipie-table"></tbody>
+        </table>
+        <h2>Zubereitung</h2>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img src="img/clock-regular.svg" alt="" />ca. 15 Min.
+          </div>
+          <div class="info-icon">
+            <img src="img/clock-regular.svg" alt="" />Gesamtzeit ca. 20 Min.
+          </div>
+        </div>
+        <ol>
+          Die Spaghetti in einem großen Topf in reichlich Salzwasser al dente
+          (ca. 8 Minuten) kochen. Die Knoblauchzehen schälen, durch die
+          Knoblauchpresse drücken oder fein hacken. Die Petersilie waschen,
+          trockenschwenken und die Blätter fein hacken. In einer Pfanne das
+          Olivenöl mit Knoblauch, Petersilie und Pfefferoni bei schwacher Hitze
+          erwärmen, etwa 3 Minuten ziehen lassen. Nach Belieben salzen. Die
+          Nudeln durch ein Sieb abgießen, gut abtropfen lassen und in die Pfanne
+          zum Knoblauchöl hinzugeben und gut durchmischen.
+        </ol>
+        <h3>Rezept erstellt von</h3>
+        <div class="autor-info">
+          <img class="autor-img" src="img/santa.jpg" alt="" />
+          <span class="autor-name">Nicolaus F.</span>
+        </div>
+      </div>
     </section>
-    <footer w3-include-html="footer.html">
-
-    </footer>
-</body>
-
+    <footer w3-include-html="footer.html"></footer>
+  </body>
 </html>

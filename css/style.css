@@ -1,7 +1,7 @@
 /* raleway-100 - latin */
 @font-face {
   font-family: "raleway";
-  src: url("assets/fonts/raleway.ttf") format("truetype");
+  src: url("../assets/fonts/raleway.ttf") format("truetype");
 }
 
 body {

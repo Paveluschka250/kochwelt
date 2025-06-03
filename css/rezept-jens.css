@@ -9,7 +9,7 @@
 }
 
 .recipie-img {
-  background: url("../img/lasagne-header.jpg") no-repeat center/cover;
+  background: url("../assets/img/food/lasagne-header.jpg") no-repeat center/cover;
   width: 100%;
   height: 300px;
   border-radius: 16px;
