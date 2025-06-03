@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/start.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/start.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <script src="./js/main.js"></script>
     <script src="./js/header.js"></script>
     <title>Kochwelt - Startseite</title>
-</head>
+  </head>
 
-<body onload="includeHTML()">
-    <header w3-include-html="header.html">
-    
-    </header>
-    
+  <body onload="includeHTML()">
+    <header w3-include-html="partials/header.html"></header>
 
-    <section class="section-herorezept">
-        <div class="herorezept-content">
-            <div class="herorezept-image">
-                <img  src="img/lasagne_min.jpg" alt="pfannkuchen">
-            </div>
-            <div class="herorezept-text">
-                <h2>Lasagne Bolognese</h2>
-                <p>Mit diesem Lasagne-Rezept bringt man die kulinarischen Highlights Italiens direkt auf den Tisch. Sobald der Duft aus dem Ofen strömt, wächst die Vorfreude. Lasagne kommt bei Jung und Alt gleichermaßen gut an!
-
-                    Die Zubereitung von Lasagne ist einfacher, als viele denken. Dank meiner Anleitung gelingt das Schichten und Backen auch Kochanfängern problemlos. Perfekt, um Familie und Freunde zu verwöhnen.
-                </p>
-                <a href="rezept-jens.html"><button class="btn">Rezept öffnen</button></a>
-            </div>
+    <section>
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="./assets/img/food/lasagne.jpg" alt="Lasagne Bolognese" />
         </div>
+        <div class="hero-text">
+          <h2 class="hero-title">Lasagna Bolognese</h2>
+          <p class="hero-description">
+            Mit diesem Lasagne-Rezept bringt man die kulinarischen Highlights
+            Italiens direkt auf den Tisch. Sobald der Duft aus dem Ofen strömt,
+            wächst die Vorfreude. Lasagne kommt bei Jung und Alt gleichermaßen
+            gut an! Die Zubereitung von Lasagne ist einfacher, als viele denken.
+            Dank meiner Anleitung gelingt das Schichten und Backen auch
+            Kochanfängern problemlos. Perfekt, um Familie und Freunde zu
+            verwöhnen.
+          </p>
+          <a href="rezept-jens.html">
+            <button class="btn">Rezept öffnen</button>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="section-newrecipies">
-        <div class="newrecipies-content">
-            <h2>Lust auf was neues?</h2>
-            <div class="newrecipies-images">
-                <div class="newrecipie-box">
-                    <a href="rezept-sinan.html"><img class="recipie-img" src="img/tortellini_min.jpg" alt="Tortellini"></a> 
-                    <h3>Tortellini</h3>
-                </div>
-                <div class="newrecipie-box">
-                    <a href="rezept-nico.html"><img class="recipie-img" src="img/pasta_aglio_min.jpg" alt="Spaghetti aglio e olio"></a>
-                    <h3>Spaghetti aglio e olio</h3>
-                </div>
-                <div class="newrecipie-box">
-                    <a href="rezept-paul.html"><img class="recipie-img" src="img/spaghetti_carbonara_min.jpg" alt="Pauls Rezept"></a>
-                    <h3>Spaghetti Carbonara</h3>
-                </div>
-            </div>
+    <section>
+      <div class="new-recipes-content">
+        <h2>Lust auf was neues?</h2>
+        <div class="new-recipies-images">
+          <div class="new-recipie-box">
+            <a href="./pages/rezept-sinan.html"
+              ><img
+                class="recipie-img"
+                src="./assets/img/food/tortellini_min.jpg"
+                alt="Tortellini"
+            /></a>
+            <h3>Tortellini</h3>
+          </div>
+          <div class="new-recipie-box">
+            <a href="./pages/rezept-nico.html"
+              ><img
+                class="recipie-img"
+                src="./assets/img/food/pasta_aglio_min.jpg"
+                alt="Spaghetti aglio e olio"
+            /></a>
+            <h3>Spaghetti aglio e olio</h3>
+          </div>
+          <div class="new-recipie-box">
+            <a href="./pages/rezept-paul.html"
+              ><img
+                class="recipie-img"
+                src="./assets/img/food/spaghetti_carbonara_min.jpg"
+                alt="Spaghetti Carbonara"
+            /></a>
+            <h3>Spaghetti Carbonara</h3>
+          </div>
         </div>
+      </div>
     </section>
-    <section class="section-blog">
-        <div class="blog-content">
-            <h2>Küchenmesser schärfen - so geht's richtig</h2>
-            <div class="blogpost-content">
-                <p class="blogpost-text">
-                    Kein Messer bleibt ewig scharf. Ein geeignetes Schleifmittel und ein regelmäßiger Nachschliff sind zwingend notwendig, um die Schärfe der Klinge zu erhalten. In diesem kleinen Ratgeber möchten wir die Frage beantworten, was Sie zum Messer schärfen brauchen und welche handwerklichen Voraussetzungen Sie mitbringen müssen. Sie erfahren mehr über den richtigen Umgang mit Schleifstein, Wetzstab oder Messerschärfer.
-                </p>
-                <div class="blogpost-image">
-                    <img src="img/messer.jpg" alt="">
-                </div>
-            </div>
+
+    <section>
+      <div class="blog-content">
+        <h2>Küchenmesser schärfen - so geht's richtig</h2>
+        <div class="blog-body">
+          <p class="blog-text">
+            Kein Messer bleibt ewig scharf. Ein geeignetes Schleifmittel und ein
+            regelmäßiger Nachschliff sind zwingend notwendig, um die Schärfe der
+            Klinge zu erhalten. In diesem kleinen Ratgeber möchten wir die Frage
+            beantworten, was Sie zum Messer schärfen brauchen und welche
+            handwerklichen Voraussetzungen Sie mitbringen müssen. Sie erfahren
+            mehr über den richtigen Umgang mit Schleifstein, Wetzstab oder
+            Messerschärfer.
+          </p>
+          <div class="blog-image">
+            <img src="./assets/img/messer.jpg" alt="" />
+          </div>
         </div>
-
+      </div>
     </section>
-    <footer w3-include-html="footer.html">
-     
-    </footer>
-</body>
 
+    <footer w3-include-html="partials/footer.html"></footer>
+  </body>
 </html>
