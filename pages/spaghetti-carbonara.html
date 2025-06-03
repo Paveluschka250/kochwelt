@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <title>Kochwelt - Spaghetti Carbonara</title>
+  </head>
+
+  <body onload="includeHTML()">
+    <header w3-include-html="../partials/header.html"></header>
+
+    <section class="recipie">
+      <div class="recipie-content">
+        <h1>Spaghetti Carbonara</h1>
+        <div class="recipie-img recipie-img-carbonara"></div>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Gesamtzeit"
+            />20 Min.
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/brain-solid.svg"
+              alt="Schwierigkeit"
+            />leicht
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/calendar-alt-regular.svg"
+              alt="Datum"
+            />17.06.2024
+          </div>
+        </div>
+        <hr />
+        <div class="recipie-form">
+          <label for="input-amount">Zutaten für</label>
+          <input id="input-amount" type="number" required min="1" max="20" />
+          <button class="btn" id="btn-amount">Portionen</button>
+        </div>
+        <span id="input-warning-msg" class="warning fadeout dont-show"
+          >Der Wert muss zwischen 1 und 20 liegen</span
+        >
+        <table class="recipie-table">
+          <tbody id="recipie-table"></tbody>
+        </table>
+        <h2>Zubereitung</h2>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Zubereitung"
+            />ca. 20 Min.
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Gesamtzeit"
+            />Gesamtzeit ca. 20 Min.
+          </div>
+        </div>
+        <ol>
+          <li>
+            Einen großen Topf mit Wasser zum Kochen bringen und reichlich
+            salzen. Die Spaghetti nach Packungsanweisung al dente kochen.
+          </li>
+          <li>
+            Während die Spaghetti kochen, Pancetta oder Guanciale in kleine
+            Würfel schneiden. Eine Pfanne auf mittlerer Hitze erhitzen und die
+            Pancetta ohne zusätzliches Fett anbraten, bis sie knusprig ist.
+            Optional kann eine geschälte Knoblauchzehe für zusätzlichen
+            Geschmack mit angebraten werden. Nach dem Anbraten die Knoblauchzehe
+            entfernen.
+          </li>
+          <li>
+            In einer Schüssel das Ei mit dem geriebenen Parmesan oder Pecorino
+            verquirlen. Mit etwas Salz und reichlich frisch gemahlenem Pfeffer
+            würzen.
+          </li>
+          <li>Die Spaghetti abgießen, dabei etwas vom Kochwasser auffangen.</li>
+          <li>
+            Die abgetropften Spaghetti sofort in die Pfanne mit der heißen
+            Pancetta geben und gut durchmischen. Die Pfanne von der Hitze nehmen
+            und die Eimischung unter ständigem Rühren hinzugeben, damit das Ei
+            nicht stockt, sondern eine cremige Sauce entsteht. Falls nötig,
+            etwas vom aufgefangenen Nudelwasser hinzufügen, um die Sauce
+            geschmeidiger zu machen.
+          </li>
+          <li>
+            Die Carbonara sofort servieren, nach Belieben mit zusätzlichem
+            geriebenen Käse und frisch gemahlenem Pfeffer bestreuen.
+          </li>
+        </ol>
+        <h3>Rezept erstellt von</h3>
+        <div class="autor-info">
+          <img
+            class="autor-img"
+            src="../assets/img/profil/paul.jpg"
+            alt="Profil"
+          />
+          <span class="autor-name">Paul G.</span>
+        </div>
+      </div>
+    </section>
+    <footer w3-include-html="../partials/footer.html"></footer>
+  </body>
+
+  <script src="../js/rezept-paul.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/header.js"></script>
+</html>

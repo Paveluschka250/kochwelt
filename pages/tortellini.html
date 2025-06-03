@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/icons/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <title>Kochwelt - Tortellini</title>
+  </head>
+
+  <body onload="includeHTML()">
+    <header w3-include-html="../partials/header.html"></header>
+
+    <section class="recipie">
+      <div class="recipie-content">
+        <h1>Tortellini</h1>
+        <div class="recipie-img recipie-img-torellini"></div>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Gesamtzeit"
+            />25 Min.
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/brain-solid.svg"
+              alt="Schwierigkeit"
+            />simpel
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/calendar-alt-regular.svg"
+              alt="Datum"
+            />18.06.2024
+          </div>
+        </div>
+        <hr />
+        <div class="recipie-form">
+          <label for="input-amount">Zutaten für</label>
+          <input id="input-amount" type="number" required min="1" max="20" />
+          <button class="btn" id="btn-amount">Portionen</button>
+        </div>
+        <span id="input-warning-msg" class="warning fadeout dont-show"
+          >Der Wert muss zwischen 1 und 20 liegen</span
+        >
+        <table class="recipie-table">
+          <tbody id="recipie-table"></tbody>
+        </table>
+        <h2>Zubereitung</h2>
+        <div class="info-iconbar">
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Zubereitung"
+            />ca. 25 Min.
+          </div>
+          <div class="info-icon">
+            <img
+              src="../assets/img/icons/clock-regular.svg"
+              alt="Gesamtzeit"
+            />Gesamtzeit ca. 25 Min.
+          </div>
+        </div>
+        <ol>
+          <li>
+            Die Tortellini nach Packungsanleitung in gesalzenem Wasser kochen.
+            Währenddessen die Zwiebel und den Knoblauch schälen und fein hacken.
+            Optional: Champignons oder Spinat vorbereiten, wenn du die Sauce
+            verfeinern möchtest.
+          </li>
+          <li>
+            In einer großen Pfanne etwas Öl erhitzen. Zwiebel und Knoblauch
+            darin glasig dünsten. Dann die Sahne hinzufügen und bei mittlerer
+            Hitze leicht köcheln lassen. Mit Salz, Pfeffer und Muskat
+            abschmecken. Wer mag, kann geriebenen Parmesan oder Frischkäse
+            einrühren, um die Sauce cremiger zu machen.
+          </li>
+          <li>
+            Die fertig gekochten Tortellini abgießen und direkt zur Sauce in die
+            Pfanne geben. Alles gut vermengen und bei niedriger Hitze 1–2
+            Minuten ziehen lassen, damit die Tortellini die Aromen aufnehmen.
+          </li>
+          <li>
+            Vor dem Servieren nach Wunsch mit frischer Petersilie und etwas
+            geriebenem Parmesan bestreuen.
+          </li>
+        </ol>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="autor-info">
+          <img
+            class="autor-img"
+            src="../assets/img/profil/sinan.jpg"
+            alt="Profil"
+          />
+          <span class="autor-name">Sinan K.</span>
+        </div>
+      </div>
+    </section>
+    <footer w3-include-html="../partials/footer.html"></footer>
+  </body>
+
+  <script src="../js/rezept-sinan.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/header.js"></script>
+</html>
