@@ -45,6 +45,13 @@ p {
   border: none;
   padding: 12px 48px;
   cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #006400; 
+  transform: scale(1.03); 
 }
 
 @media (max-width: 840px) {

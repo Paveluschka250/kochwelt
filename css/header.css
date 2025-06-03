@@ -28,13 +28,30 @@ header .header-content nav {
 }
 
 header .header-content nav a {
+  position: relative;
+  color: #000;
   padding-bottom: 8px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header .header-content nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #008800;
+  transition: width 0.3s ease;
 }
 
 header .header-content nav a:hover {
   color: #008000;
-  border-bottom: 5px solid #008800;
-  padding-bottom: 3px;
+}
+
+header .header-content nav a:hover::after {
+  width: 100%;
 }
 
 header .header-content .mobile {
